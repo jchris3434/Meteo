@@ -1,0 +1,10 @@
+services:
+    php-dev-test:
+        build:
+            context: src
+            dockerfile: Dockerfile
+        ports:
+            - 8123:80
+        volumes:
+            - ./src:/var/www/html
+        command: sh -c "composer install --ignore-platform-reqs --no-interaction && apache2-foreground"

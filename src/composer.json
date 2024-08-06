@@ -1,0 +1,16 @@
+{
+  "name": "phptest/phptest",
+  "license": "proprietary",
+  "type": "project",
+  "version": "1.1.0",
+  "autoload": {
+    "psr-4": {"Services\\": "Services/"},
+    "files": [
+      "config/config.php"
+    ]
+  },
+  "require": {
+    "php": ">=8.2",
+    "guzzlehttp/guzzle": "*"
+  }
+}

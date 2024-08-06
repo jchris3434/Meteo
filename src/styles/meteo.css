@@ -1,0 +1,26 @@
+.accordeonContainer {
+    width: 20rem;
+    height: 5rem;
+}
+
+.accordion {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    display: none;
+    padding: 0 2rem;
+    overflow: hidden;
+    background-color: white;
+}
